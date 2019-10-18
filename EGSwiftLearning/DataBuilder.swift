@@ -1,0 +1,20 @@
+//
+//  DataBuilder.swift
+//  EGSwiftLearning
+//
+//  Created by Easer Liu on 2019/10/17.
+//  Copyright © 2019 Easer. All rights reserved.
+//
+
+import UIKit
+
+class DataBuilder: NSObject {
+    class func cryptopangramsData() -> [String:Any]{
+//        the result should be SUBDERMATOGLYPHICFJKNQVWXZ
+        return [
+            "N":10000,
+            "L":25,
+            "ARR":[3292937,175597,18779,50429,375469,1651121,2102,3722,2376497,611683,489059,2328901,3150061,829981,421301,76409,38477,291931,730241,959821,1664197,3057407,4267589,4729181,5335543]
+        ];
+    }
+}
