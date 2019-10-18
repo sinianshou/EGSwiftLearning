@@ -34,7 +34,7 @@ class AlgorithmManager: NSObject {
         //找到公约数
         let fac = self.findMaxCommonFactor(num1: firstNum, num2: secondNum)
         //向前求出质数
-        let preArr = self.unlockNumArr(from: 0, to: index, fac: fac, arr: ARR, isReversed: true).reversed()
+        let preArr = self.unlockNumArr(from: index, to: 0, fac: fac, arr: ARR, isReversed: true).reversed()
         //向后求出质数
         let nextArr = self.unlockNumArr(from: index+1, to: L-1, fac: fac, arr: ARR, isReversed: false)
         //整合质数数组
@@ -74,19 +74,11 @@ class AlgorithmManager: NSObject {
         //初始化质数数组
         var result = [NSInteger]()
         var facVar = fac
-        if isReversed {
-            //向前求质数时需要逆序
-            for i in (from ... to).reversed() {
-                let num = arr[i] / facVar
-                result.append(num)
-                facVar = num
-            }
-        }else{
-            for i in from ... to {
-                let num = arr[i] / facVar
-                result.append(num)
-                facVar = num
-            }
+        let by = isReversed ? -1 : 1
+        for i in stride(from: from, through: to, by: by) {
+            let num = arr[i] / facVar
+            result.append(num)
+            facVar = num
         }
         return result
     }
@@ -117,17 +109,18 @@ class AlgorithmManager: NSObject {
                 cryArrM.append(num)
             }
         }
-        let charArr :[String] = ["A","B","C","D","E","F","G","H","I","G","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-        var map = [String:String]()
+        
+        let c = Character("A").asciiValue
+        var map = [String:Character]()
         //将质数与字母进行映射
         for i in 0 ..< cryArrM.count {
             let num = cryArrM[i]
-            map[String(num)] =  charArr[i]
+            map[String(num)] =  Character(UnicodeScalar(UInt8(i)+c!))
         }
         var result = ""
         //依据映射将质数数组替换成字母
         for num in cryArr {
-            result += map[String(num)]!
+            result.append(map[String(num)]!)
         }
         return result
     }
