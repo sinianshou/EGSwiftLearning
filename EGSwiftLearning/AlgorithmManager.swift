@@ -52,16 +52,16 @@ class AlgorithmManager: NSObject {
     /// - Parameter num1: 第一个数
     /// - Parameter num2: 第二个数
     class func findMaxCommonFactor(num1:NSInteger, num2:NSInteger) -> NSInteger{
-        var lNum = num1 > num2 ? num1 : num2
-        var sNum = num1 < num2 ? num1 : num2
-        var rNum = lNum % sNum
-        //依据的是：被除数A与除数B得出余数C，余数C与除数B的公约数，和被除数A与除数B的公约数相同，所以反复利用这个理论，直到余数C为零时，除数B即为公约数
-        while rNum != 0 {
-            lNum = sNum
-            sNum = rNum
-            rNum = lNum % sNum
+        if num1 < num2 {
+            return  self.findMaxCommonFactor(num1: num2, num2: num1)
         }
-        return sNum
+        let rNum = num1 % num2
+        if rNum == 0 {
+            return num2
+        }else{
+            return self.findMaxCommonFactor(num1: num2, num2: rNum)
+        }
+        //依据的是：被除数A与除数B得出余数C，余数C与除数B的公约数，和被除数A与除数B的公约数相同，所以反复利用这个理论，直到余数C为零时，除数B即为公约数
     }
     
     /// 依据现有质数求出前后的质数
@@ -111,16 +111,16 @@ class AlgorithmManager: NSObject {
         }
         
         let c = Character("A").asciiValue
-        var map = [String:Character]()
+        var map = [NSInteger:Character]()
         //将质数与字母进行映射
         for i in 0 ..< cryArrM.count {
             let num = cryArrM[i]
-            map[String(num)] =  Character(UnicodeScalar(UInt8(i)+c!))
+            map[num] =  Character(UnicodeScalar(UInt8(i)+c!))
         }
         var result = ""
         //依据映射将质数数组替换成字母
         for num in cryArr {
-            result.append(map[String(num)]!)
+            result.append(map[num]!)
         }
         return result
     }
