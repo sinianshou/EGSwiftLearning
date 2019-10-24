@@ -15,14 +15,15 @@ class HomePageVC: UIViewController {
         self.view.backgroundColor = UIColor.green
 
 //        self.checkCryptopangrams()
-        
-        self.checkValidNum()
+//        self.checkValidNum()
+        self.checkOnceInTripleArray()
         
         
         // Do any additional setup after loading the view.
     }
     
     func checkValidNum(){
+        print("checkValidNum result is ")
         for e in DataBuilder.ValidNumberData(){
             let isNum = AlgorithmManager.ValidNumberSolution(e)
             print(e+" => "+String(isNum))
@@ -35,18 +36,13 @@ class HomePageVC: UIViewController {
         //获取解密字符串
         let result = AlgorithmManager.cryptopangrams(N: data["N"] as! NSInteger, L: data["L"] as! NSInteger, ARR: data["ARR"] as! [NSInteger])
         //打印字符串
-        print("result is "+(result as! String))
+        print("checkCryptopangrams result is "+(result as! String))
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func checkOnceInTripleArray() {
+        let data = DataBuilder.OnceInTripleData()
+        let result = AlgorithmManager.OnceInTripleArray(numArr: data)
+        print("checkOnceInTripleArray result is "+String(result))
     }
-    */
 
 }
