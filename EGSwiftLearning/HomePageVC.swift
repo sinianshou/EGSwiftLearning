@@ -8,41 +8,71 @@
 
 import UIKit
 
+@available(iOS 10.0, *)
+@available(iOS 10.0, *)
 class HomePageVC: UIViewController {
+    
+    var resultView = UITextView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.green
-
-//        self.checkCryptopangrams()
-//        self.checkValidNum()
-        self.checkOnceInTripleArray()
-        
-        
+        self.UIConfig()
         // Do any additional setup after loading the view.
     }
-    
-    func checkValidNum(){
-        print("checkValidNum result is ")
+    func UIConfig(){
+        self.view.backgroundColor = UIColor.white
+        let bn = UIButton.init()
+        bn.setTitle("测试", for: .normal)
+        bn.frame = CGRect(x: 10, y: 100, width: 100, height: 50)
+        bn.addTarget(self, action: #selector(test), for: .touchUpInside)
+        bn.backgroundColor = UIColor.init(red: 0/255.0, green: 144/255.0, blue: 238/255.0, alpha: 1)
+        self.view.addSubview(bn)
+        resultView.frame = CGRect(x: bn.frame.origin.x, y: bn.frame.origin.y + bn.frame.size.height + 20, width: self.view.frame.size.width, height: self.view.frame.size.height * 0.3)
+        resultView.backgroundColor = UIColor.lightGray
+        self.view.addSubview(resultView)
+    }
+    @objc func test(){
+        var result = ""
+//        result = self.checkCryptopangrams()
+        result = self.checkValidNum()
+//        result = self.checkOnceInTripleArray()
+//        result = self.checkMaxPointOnLine()
+        resultView.text = result
+    }
+    func checkMaxPointOnLine() -> String{
+        print("checkMaxPointOnLine result is ")
+        var result = "checkMaxPointOnLine result is \nOutput: "
+        let datas = DataBuilder.maxPointOnLineData()
+        for points in datas {
+            let num = AlgorithmManager.MaxPointOnLineSolution(points: points)
+            result += " " + String(num)
+        }
+        return result
+    }
+    func checkValidNum() -> String{
+        var result = "checkValidNum result is "
         for e in DataBuilder.ValidNumberData(){
             let isNum = AlgorithmManager.ValidNumberSolution(e)
-            print(e+" => "+String(isNum))
+            result += "\n\""+e+"\" => "+String(isNum)
         }
+        return result
     }
     
-    func checkCryptopangrams(){
+    func checkCryptopangrams() -> String{
         //获取输入数据
         let data = DataBuilder.cryptopangramsData()
         //获取解密字符串
-        let result = AlgorithmManager.cryptopangrams(N: data["N"] as! NSInteger, L: data["L"] as! NSInteger, ARR: data["ARR"] as! [NSInteger])
+        let str = AlgorithmManager.cryptopangrams(N: data["N"] as! NSInteger, L: data["L"] as! NSInteger, ARR: data["ARR"] as! [NSInteger])
         //打印字符串
-        print("checkCryptopangrams result is "+(result as! String))
+        let result = "checkCryptopangrams result is "+(str as! String)
+        return result
     }
     
-    func checkOnceInTripleArray() {
+    func checkOnceInTripleArray()  -> String{
         let data = DataBuilder.OnceInTripleData()
-        let result = AlgorithmManager.OnceInTripleArray(numArr: data)
-        print("checkOnceInTripleArray result is "+String(result))
+        let num = AlgorithmManager.OnceInTripleArray(numArr: data)
+        let result = "checkOnceInTripleArray result is "+String(num)
+        return result
     }
 
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EB8FC80C235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FC80B235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift */; };
 		EBC18CA52361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */; };
+		EBC551BB236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC551BA236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift */; };
 		EBE9A2912357FD66004D9856 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9A2902357FD66004D9856 /* AppDelegate.swift */; };
 		EBE9A2932357FD66004D9856 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9A2922357FD66004D9856 /* SceneDelegate.swift */; };
 		EBE9A2982357FD66004D9856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE9A2962357FD66004D9856 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		EB8FC80B235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+ValidNumber.swift"; sourceTree = "<group>"; };
 		EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+OnceInTripleArray.swift"; sourceTree = "<group>"; };
+		EBC551BA236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+MacPointsOnLine.swift"; sourceTree = "<group>"; };
 		EBE9A28D2357FD66004D9856 /* EGSwiftLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGSwiftLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE9A2902357FD66004D9856 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBE9A2922357FD66004D9856 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				EBE9A2CA235819EF004D9856 /* AlgorithmManager.swift */,
 				EB8FC80B235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift */,
 				EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */,
+				EBC551BA236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift */,
 				EBE9A2962357FD66004D9856 /* Main.storyboard */,
 				EBE9A2992357FD69004D9856 /* Assets.xcassets */,
 				EBE9A29B2357FD69004D9856 /* LaunchScreen.storyboard */,
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBE9A2912357FD66004D9856 /* AppDelegate.swift in Sources */,
+				EBC551BB236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift in Sources */,
 				EBE9A2C923581940004D9856 /* DataBuilder.swift in Sources */,
 				EBC18CA52361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift in Sources */,
 				EBE9A2C52357FFCD004D9856 /* HomePageVC.swift in Sources */,
