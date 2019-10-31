@@ -13,15 +13,32 @@ class HomePageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.green
-
-//        self.checkCryptopangrams()
-//        self.checkValidNum()
-        self.checkOnceInTripleArray()
+        let bn = UIButton.init()
+        bn.setTitle("测试", for: .normal)
+        bn.frame = CGRect(x: 10, y: 100, width: 100, height: 100)
+        bn.addTarget(self, action: #selector(test), for: .touchUpInside)
+        self.view.addSubview(bn)
+        
         
         
         // Do any additional setup after loading the view.
     }
-    
+    @objc func test(){
+//        self.checkCryptopangrams()
+//        self.checkValidNum()
+//        self.checkOnceInTripleArray()
+        self.checkMaxPointOnLine()
+    }
+    func checkMaxPointOnLine(){
+        print("checkMaxPointOnLine result is ")
+        var result = "Output: "
+        let datas = DataBuilder.maxPointOnLineData()
+        for points in datas {
+            let num = AlgorithmManager.MaxPointOnLineSolution(points: points)
+            result += " " + String(num)
+        }
+        print(result)
+    }
     func checkValidNum(){
         print("checkValidNum result is ")
         for e in DataBuilder.ValidNumberData(){
