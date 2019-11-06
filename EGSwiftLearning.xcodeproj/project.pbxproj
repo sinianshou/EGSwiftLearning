@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB47C6A32372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB47C6A22372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift */; };
 		EB8FC80C235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FC80B235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift */; };
 		EBC18CA52361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */; };
 		EBC551BB236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC551BA236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB47C6A22372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+LongestDuplicateSubstring.swift"; sourceTree = "<group>"; };
 		EB8FC80B235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+ValidNumber.swift"; sourceTree = "<group>"; };
 		EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+OnceInTripleArray.swift"; sourceTree = "<group>"; };
 		EBC551BA236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+MacPointsOnLine.swift"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				EB8FC80B235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift */,
 				EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */,
 				EBC551BA236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift */,
+				EB47C6A22372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift */,
 				EBE9A2962357FD66004D9856 /* Main.storyboard */,
 				EBE9A2992357FD69004D9856 /* Assets.xcassets */,
 				EBE9A29B2357FD69004D9856 /* LaunchScreen.storyboard */,
@@ -278,6 +281,7 @@
 				EBC551BB236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift in Sources */,
 				EBE9A2C923581940004D9856 /* DataBuilder.swift in Sources */,
 				EBC18CA52361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift in Sources */,
+				EB47C6A32372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift in Sources */,
 				EBE9A2C52357FFCD004D9856 /* HomePageVC.swift in Sources */,
 				EB8FC80C235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift in Sources */,
 				EBE9A2CB235819EF004D9856 /* AlgorithmManager.swift in Sources */,
