@@ -52,4 +52,10 @@ class DataBuilder: NSObject {
             [[0,0],[94911151,94911150],[94911152,94911151]],
         ]
     }
+    
+    class func NearestPalindromicData() -> [String]{
+        return [
+            "121", "99", "101", "1234"
+        ]
+    }
 }

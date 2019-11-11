@@ -34,10 +34,20 @@ class HomePageVC: UIViewController {
     @objc func test(){
         var result = ""
 //        result = self.checkCryptopangrams()
-        result = self.checkValidNum()
+//        result = self.checkValidNum()
 //        result = self.checkOnceInTripleArray()
 //        result = self.checkMaxPointOnLine()
+        result = self.checkNearestPalindromic()
         resultView.text = result
+    }
+    func checkNearestPalindromic() -> String{
+        var result = "checkNearestPalindromic result is :"
+        let items = DataBuilder.NearestPalindromicData()
+        for item in items {
+            let str = AlgorithmManager.NearestPalindromicSolution(item)
+            result += "\n\""+item+"\" => "+str
+        }
+        return result
     }
     func checkMaxPointOnLine() -> String{
         print("checkMaxPointOnLine result is ")
