@@ -38,7 +38,17 @@ class HomePageVC: UIViewController {
 //        result = self.checkOnceInTripleArray()
 //        result = self.checkMaxPointOnLine()
 result = self.checkLongestDuplicateSubstring()
+        result = self.checkNearestPalindromic()
         resultView.text = result
+    }
+    func checkNearestPalindromic() -> String{
+        var result = "checkNearestPalindromic result is :"
+        let items = DataBuilder.NearestPalindromicData()
+        for item in items {
+            let str = AlgorithmManager.NearestPalindromicSolution(item)
+            result += "\n\""+item+"\" => "+str
+        }
+        return result
     }
     func checkMaxPointOnLine() -> String{
         print("checkMaxPointOnLine result is ")

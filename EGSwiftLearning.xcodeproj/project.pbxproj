@@ -21,6 +21,7 @@
 		EBE9A2C52357FFCD004D9856 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9A2C42357FFCD004D9856 /* HomePageVC.swift */; };
 		EBE9A2C923581940004D9856 /* DataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9A2C823581940004D9856 /* DataBuilder.swift */; };
 		EBE9A2CB235819EF004D9856 /* AlgorithmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9A2CA235819EF004D9856 /* AlgorithmManager.swift */; };
+		EBFC969B237978AB00FD8907 /* AlgorithmManager+TheClosestPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC969A237978AB00FD8907 /* AlgorithmManager+TheClosestPalindrome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		EBE9A2C42357FFCD004D9856 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 		EBE9A2C823581940004D9856 /* DataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBuilder.swift; sourceTree = "<group>"; };
 		EBE9A2CA235819EF004D9856 /* AlgorithmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmManager.swift; sourceTree = "<group>"; };
+		EBFC969A237978AB00FD8907 /* AlgorithmManager+TheClosestPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+TheClosestPalindrome.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */,
 				EBC551BA236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift */,
 				EB47C6A22372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift */,
+				EBFC969A237978AB00FD8907 /* AlgorithmManager+TheClosestPalindrome.swift */,
 				EBE9A2962357FD66004D9856 /* Main.storyboard */,
 				EBE9A2992357FD69004D9856 /* Assets.xcassets */,
 				EBE9A29B2357FD69004D9856 /* LaunchScreen.storyboard */,
@@ -279,6 +282,7 @@
 			files = (
 				EBE9A2912357FD66004D9856 /* AppDelegate.swift in Sources */,
 				EBC551BB236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift in Sources */,
+				EBFC969B237978AB00FD8907 /* AlgorithmManager+TheClosestPalindrome.swift in Sources */,
 				EBE9A2C923581940004D9856 /* DataBuilder.swift in Sources */,
 				EBC18CA52361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift in Sources */,
 				EB47C6A32372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift in Sources */,
