@@ -37,7 +37,7 @@ class HomePageVC: UIViewController {
 //        result = self.checkValidNum()
 //        result = self.checkOnceInTripleArray()
 //        result = self.checkMaxPointOnLine()
-result = self.checkLongestDuplicateSubstring()
+//        result = self.checkLongestDuplicateSubstring()
         result = self.checkNearestPalindromic()
         resultView.text = result
     }
