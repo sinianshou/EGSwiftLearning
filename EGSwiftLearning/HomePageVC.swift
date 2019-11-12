@@ -34,15 +34,26 @@ class HomePageVC: UIViewController {
     @objc func test(){
         var result = ""
 //        result = self.checkCryptopangrams()
-        result = self.checkValidNum()
+//        result = self.checkValidNum()
 //        result = self.checkOnceInTripleArray()
 //        result = self.checkMaxPointOnLine()
+//        result = self.checkLongestDuplicateSubstring()
+        result = self.checkNearestPalindromic()
         resultView.text = result
+    }
+    func checkNearestPalindromic() -> String{
+        var result = "checkNearestPalindromic result is :"
+        let items = DataBuilder.NearestPalindromicData()
+        for item in items {
+            let str = AlgorithmManager.NearestPalindromicSolution(item)
+            result += "\n\""+item+"\" => "+str
+        }
+        return result
     }
     func checkMaxPointOnLine() -> String{
         print("checkMaxPointOnLine result is ")
         var result = "checkMaxPointOnLine result is \nOutput: "
-        let datas = DataBuilder.maxPointOnLineData()
+        let datas = DataBuilder.MaxPointOnLineData()
         for points in datas {
             let num = AlgorithmManager.MaxPointOnLineSolution(points: points)
             result += " " + String(num)
@@ -75,4 +86,12 @@ class HomePageVC: UIViewController {
         return result
     }
 
+    func checkLongestDuplicateSubstring() -> String {
+        var result = "checkLongestDuplicateSubstring is: \n"
+        let data = DataBuilder.LongestDuplicateSubstringData()
+        for str in data {
+            result += "\"" + str + "\"=>\"" + AlgorithmManager.LongestDuplicateSubstringSolution(str) + "\"\n"
+        }
+        return result
+    }
 }
