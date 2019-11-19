@@ -38,8 +38,37 @@ class HomePageVC: UIViewController {
 //        result = self.checkOnceInTripleArray()
 //        result = self.checkMaxPointOnLine()
 //        result = self.checkLongestDuplicateSubstring()
-        result = self.checkNearestPalindromic()
+//        result = self.checkNearestPalindromic()
+        result = self.checkWordLadder2()
         resultView.text = result
+    }
+    func checkWordLadder2() -> String{
+        var result = "checkWordLadder2 result is :"
+        let items = DataBuilder.WordLadder2Data()
+        let keys = DataBuilder.WordLadder2Keys
+        for item in items {
+            let begin = item[keys[0]] as! String
+            let end = item[keys[1]] as! String
+            let list = item[keys[2]]  as! [String]
+            let resultArr = AlgorithmManager.WordLadder2Solution(begin, end, list)
+            result += "\n" + keys[0] + " = " + begin
+            result += "\n" + keys[1] + " = " + end
+            result += "\n" + keys[2] + " = [ "
+            for e in list {
+                result += e + ", "
+            }
+            result += "]"
+            result += "\nLadder : "
+            for Es in resultArr {
+                result += "\n[ "
+                for e in Es {
+                    result += e + ", "
+                }
+                result += "]"
+            }
+            result += "\n"
+        }
+        return result
     }
     func checkNearestPalindromic() -> String{
         var result = "checkNearestPalindromic result is :"

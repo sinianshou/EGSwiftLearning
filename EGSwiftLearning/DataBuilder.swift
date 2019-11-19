@@ -67,4 +67,14 @@ class DataBuilder: NSObject {
             "121", "99", "101", "1234", "10", "1", "11", "1283"
         ]
     }
+    static var WordLadder2Keys = ["beginWord", "endWord", "wordList"]
+    class func WordLadder2Data() -> [[String:Any]]{
+        return [
+            [
+                WordLadder2Keys[0]:"hit",
+                WordLadder2Keys[1]:"cog",
+                WordLadder2Keys[2]:["hot","dot","dog","lot","log","cog"]
+            ],
+        ]
+    }
 }
