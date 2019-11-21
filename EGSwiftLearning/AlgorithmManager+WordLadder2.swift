@@ -7,6 +7,12 @@
 //
 
 import Foundation
+var listList = [[String]]();
+ var tempPath = [Int]()
+ var d = [Int]();
+ var countInq = [Int]();
+ var inq = [Bool]();
+ var pre = [Set<Int>]();
 extension AlgorithmManager{
     class func WordLadder2Solution(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> [[String]] {
         var hashSet = Set<String>();
@@ -30,29 +36,36 @@ extension AlgorithmManager{
             index += 1
         }
         let size = list.count;
-                 var graph = [[Bool]]();
+        var graph = [[Bool]]();
+            graph.append([Bool]())
+            inq.append(false)
         for i in 0 ..< size {
-            for j in i+1 ... size {
+            for j in i+1 ..< size {
+                if graph.count<size {
+                    graph.append([Bool]())
+                    inq.append(false)
+                }
                 if self.HasPath(word1: list[i], word2: list[j]) {
-                    graph[i][j] = true;
-                    graph[j][i] = true;
+                    graph[i].append(true)
+//                    graph[i][j] = true;
+//                    graph[j][i] = true;
+                }else{
+                    graph[i].append(false)
                 }
             }
         }
-        var d = [Int]();
-        var countInq = [Int]();
-        var inq = [Bool]();
-        var pre = [Set<String>]();
         for _ in 0 ..< size {
             d.append(Int.max)
             countInq.append(0)
-            pre.append(Set<String>())
+            pre.append(Set<Int>())
         }
+        self.SPFA(start: start, list: list, graph: graph)
+        self.DFS(start: start, nowVisit: end, list: list)
 //        self.SPFA(start: start, list: list);
 //        self.DFS(end: end, list: list);
 //                spfa(start);
 //                dfs(end);
-//                return listList;
+                return listList;
         
         return [["tring"]];
     }
@@ -70,10 +83,6 @@ extension AlgorithmManager{
     
     class func SPFA(start:Int, list:[String], graph:[[Bool]]) -> Bool{
         let size = list.count;
-        var d = [Int]();
-        var countInq = [Int]();
-        var inq = [Bool]();
-        var pre = [Set<Int>]();
         for _ in 0 ..< size {
             d.append(Int.max)
             countInq.append(0)
@@ -125,8 +134,23 @@ extension AlgorithmManager{
         
         return true
     }
+
     
-    class func DFS(end:Int, list:[String]) -> Bool{
-        return true
+    class func DFS(start:Int, nowVisit:Int, list:[String]) -> (){
+       print(listList)
+        tempPath.append(nowVisit)
+                if(nowVisit == start){
+                    var path = [String]()
+                    for i in stride(from:tempPath.count, through:0, by:-1) {
+                        path.append(list[tempPath[i]])
+                    }
+                    listList.append(path);
+                    tempPath.remove(at: tempPath.count - 1)
+                    return;
+                }
+        for integer in pre[nowVisit] {
+            self.DFS(start: start, nowVisit: integer, list: list)
+        }
+                tempPath.remove(at: tempPath.count - 1);
     }
 }
