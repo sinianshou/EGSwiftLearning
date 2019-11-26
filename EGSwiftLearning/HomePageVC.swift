@@ -13,6 +13,7 @@ import UIKit
 class HomePageVC: UIViewController {
     
     var resultView = UITextView()
+    var algo = AlgorithmManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +40,8 @@ class HomePageVC: UIViewController {
 //        result = self.checkMaxPointOnLine()
 //        result = self.checkLongestDuplicateSubstring()
 //        result = self.checkNearestPalindromic()
-        result = self.checkWordLadder2()
+//result = self.checkWordLadder2()
+result = self.checkStayInSamePlace()
         resultView.text = result
     }
     func checkWordLadder2() -> String{
@@ -120,6 +122,15 @@ class HomePageVC: UIViewController {
         let data = DataBuilder.LongestDuplicateSubstringData()
         for str in data {
             result += "\"" + str + "\"=>\"" + AlgorithmManager.LongestDuplicateSubstringSolution(str) + "\"\n"
+        }
+        return result
+    }
+    func checkStayInSamePlace() -> String {
+        var result = "checkStayInSamePlace is: \n"
+        let datas = DataBuilder.StayInSamePlaceData()
+        for data in datas {
+            result += "steps = " + String(data["steps"]!) + " arrLen = " + String(data["arrLen"]!) + "\n"
+            result += "output : " + String(self.algo.numWays(data["steps"]!, data["arrLen"]!)) + "\n"
         }
         return result
     }

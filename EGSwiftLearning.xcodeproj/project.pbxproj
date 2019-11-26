@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB2E64BC238D583700206990 /* AlgorithmManager+StayInSamePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E64BB238D583700206990 /* AlgorithmManager+StayInSamePlace.swift */; };
 		EB47C6A32372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB47C6A22372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift */; };
 		EB6C9F662383D10500A590E7 /* AlgorithmManager+WordLadder2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C9F652383D10500A590E7 /* AlgorithmManager+WordLadder2.swift */; };
 		EB8FC80C235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FC80B235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB2E64BB238D583700206990 /* AlgorithmManager+StayInSamePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+StayInSamePlace.swift"; sourceTree = "<group>"; };
 		EB47C6A22372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+LongestDuplicateSubstring.swift"; sourceTree = "<group>"; };
 		EB6C9F652383D10500A590E7 /* AlgorithmManager+WordLadder2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+WordLadder2.swift"; sourceTree = "<group>"; };
 		EB8FC80B235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+ValidNumber.swift"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				EB47C6A22372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift */,
 				EBFC969A237978AB00FD8907 /* AlgorithmManager+TheClosestPalindrome.swift */,
 				EB6C9F652383D10500A590E7 /* AlgorithmManager+WordLadder2.swift */,
+				EB2E64BB238D583700206990 /* AlgorithmManager+StayInSamePlace.swift */,
 				EBE9A2962357FD66004D9856 /* Main.storyboard */,
 				EBE9A2992357FD69004D9856 /* Assets.xcassets */,
 				EBE9A29B2357FD69004D9856 /* LaunchScreen.storyboard */,
@@ -292,6 +295,7 @@
 				EB6C9F662383D10500A590E7 /* AlgorithmManager+WordLadder2.swift in Sources */,
 				EBE9A2C52357FFCD004D9856 /* HomePageVC.swift in Sources */,
 				EB8FC80C235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift in Sources */,
+				EB2E64BC238D583700206990 /* AlgorithmManager+StayInSamePlace.swift in Sources */,
 				EBE9A2CB235819EF004D9856 /* AlgorithmManager.swift in Sources */,
 				EBE9A2932357FD66004D9856 /* SceneDelegate.swift in Sources */,
 			);

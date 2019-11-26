@@ -83,4 +83,37 @@ class DataBuilder: NSObject {
             ],
         ]
     }
+    
+    class func StayInSamePlaceData() -> [[String:Int]]{
+        return[
+            [
+                "steps":3,
+                "arrLen":2     //output:4
+            ],
+            [
+                "steps":2,
+                "arrLen":4    //output:2
+            ],
+            [
+                "steps":4,
+                "arrLen":2    //output:8
+            ],
+            [
+                "steps":4,
+                "arrLen":3    //output:9
+            ],
+            [
+                "steps":4,
+                "arrLen":4    //output:9
+            ],
+            [
+                "steps":5,
+                "arrLen":4    //output:21
+            ],
+            [
+                "steps":6,
+                "arrLen":13    //output:21
+            ],
+        ]
+    }
 }
