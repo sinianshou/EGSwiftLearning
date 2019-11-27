@@ -31,12 +31,8 @@ extension AlgorithmManager{
         }
         
         //清空容器
-        listList.removeAll();
-        tempPath.removeAll();
-        d.removeAll();
-        countInq.removeAll();
-        inq.removeAll();
-        pre.removeAll();
+        listList = [[String]]();
+        tempPath = [Int]()
         
 //        将单词加入到list中，并记录头单词和为单词的序号
         var index = 0;
@@ -55,16 +51,11 @@ extension AlgorithmManager{
         }
 //        获得单词的数量，并初始化图，
         let size = list.count;
-        var graph = [[Bool]]();
-        for i in 0 ..< size{
-            graph.append([Bool]())
-            d.append(Int.max)
-            countInq.append(0)
-            pre.append(Set<Int>())
-            inq.append(false)
-        for _ in 0 ..< size {
-            graph[i].append(false)
-            }}
+        var graph = [[Bool]](repeating: [Bool](repeating: false, count: size), count: size);
+        d = [Int](repeating: Int.max, count: size)
+        countInq = [Int](repeating: 0, count: size)
+        pre = [Set<Int>](repeating: Set<Int>(), count: size)
+        inq = [Bool](repeating: false, count: size)
 //        将图中可一步到达的两个单词位置设置为true
         for i in 0 ..< size {
             for j in i+1 ..< size {

@@ -40,8 +40,8 @@ class HomePageVC: UIViewController {
 //        result = self.checkMaxPointOnLine()
 //        result = self.checkLongestDuplicateSubstring()
 //        result = self.checkNearestPalindromic()
-//result = self.checkWordLadder2()
-result = self.checkStayInSamePlace()
+result = self.checkWordLadder2()
+//result = self.checkStayInSamePlace()
         resultView.text = result
     }
     func checkWordLadder2() -> String{
