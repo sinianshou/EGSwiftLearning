@@ -112,7 +112,7 @@ class DataBuilder: NSObject {
             ],
             [
                 "steps":6,
-                "arrLen":13    //output:21
+                "arrLen":13    //output:51
             ],
         ]
     }
