@@ -42,6 +42,10 @@ class HomePageVC: UIViewController {
 //        result = self.checkNearestPalindromic()
 result = self.checkWordLadder2()
 //result = self.checkStayInSamePlace()
+//        result = self.checkWordLadder2()
+        
+        var map = Map()
+        
         resultView.text = result
     }
     func checkWordLadder2() -> String{
