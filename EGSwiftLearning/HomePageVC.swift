@@ -42,12 +42,13 @@ class HomePageVC: UIViewController {
 //        result = self.checkNearestPalindromic()
 //result = self.checkStayInSamePlace()
 //        result = self.checkWordLadder2()
+        result = self.checkStrongPasswordCheckerData()
         
-        let map = Map()
+//        let map = Map()
 //        map.testMap()
 //        map.testCompactMap()
 //        map.testCompactMapValues()
-        map.testFlatMap()
+//        map.testFlatMap()
         
         resultView.text = result
     }
@@ -138,6 +139,15 @@ class HomePageVC: UIViewController {
         for data in datas {
             result += "steps = " + String(data["steps"]!) + " arrLen = " + String(data["arrLen"]!) + "\n"
             result += "output : " + String(self.algo.numWays(data["steps"]!, data["arrLen"]!)) + "\n"
+        }
+        return result
+    }
+    func checkStrongPasswordCheckerData() -> String {
+        var result = "checkStrongPasswordCheckerData is: \n"
+        let datas = DataBuilder.StrongPasswordCheckerData()
+        for data in datas {
+            result += "str = " + data + "\n"
+            result += "output : " + String(self.algo.strongPasswordChecker(data)) + "\n"
         }
         return result
     }

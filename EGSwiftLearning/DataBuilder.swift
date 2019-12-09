@@ -116,4 +116,10 @@ class DataBuilder: NSObject {
             ],
         ]
     }
+    
+    class func StrongPasswordCheckerData() -> [String] {
+        return [
+            "abccccdddddeee"
+        ]
+    }
 }
