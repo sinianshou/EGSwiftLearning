@@ -10,7 +10,7 @@ extension AlgorithmManager {
     func strongPasswordChecker(_ s: String) -> Int {
         let len = s.count
         if len==0 {
-            return 0
+            return 6
         }
         var repeatsTmp = [Int](repeating: 1, count: len)
         var repeats = [[String:Int]]()
@@ -34,59 +34,77 @@ extension AlgorithmManager {
             if pre == ch {
                 repeatsTmp[index] = 1 + repeatsTmp[index-1]
                 repeatsTmp[index-1] = 1
-            }else if (index>0 && repeatsTmp[index-1]>1){
+            }else if (index>0 && repeatsTmp[index-1]>2){
                 repeats.append(self.configRepeatChar(num: repeatsTmp[index-1]))
             }
             pre = ch
             index += 1
         }
-        if index==len && repeatsTmp[index-1]>1 {
+        if index==len && repeatsTmp[index-1]>2 {
             repeats.append(self.configRepeatChar(num: repeatsTmp[index-1]))
         }
         print(repeats)
-        repeats.sort { (i1, i2) -> Bool in
-            i1["dNum"]! < i2["dNum"]!
+        if repeats.count>1 {
+            repeats.sort { (i1, i2) -> Bool in
+                i1["dNum"]! < i2["dNum"]!
+            }
         }
         print(repeats)
-        
+        var steps = 0
         if len<6 {
             var insertNum = 6-len
             var index = 0
             for repeatNum in repeats {
                 if insertNum > repeatNum["iNum"]! {
                     insertNum = insertNum - repeatNum["iNum"]!
+                    mustNum = mustNum - repeatNum["iNum"]!
+                    steps += repeatNum["iNum"]!
                     repeats.remove(at: index)
                 }else{
-                    insertNum = 0
+                    mustNum = mustNum - insertNum
                     let iNum = repeatNum["iNum"]! - insertNum
+                    steps += insertNum
+                    insertNum = 0
                     repeats.remove(at: index)
                     repeats.append(self.configRepeatChar(num: iNum*3))
                     break
                 }
+                mustNum = mustNum<0 ? 0 : mustNum
                 index += 1
             }
-            
+            if insertNum>0 {
+                mustNum = mustNum - insertNum
+                mustNum = mustNum<0 ? 0 : mustNum
+                steps += insertNum
+            }
         }else if (len>20){
-            var dNum = len-20
+            var deleNum = len-20
             var index = 0
             for repeatNum in repeats {
-                if dNum > repeatNum["dNum"]! {
-                    dNum = dNum - repeatNum["dNum"]!
+                if deleNum > repeatNum["dNum"]! {
+                    deleNum = deleNum - repeatNum["dNum"]!
+                    steps += repeatNum["dNum"]!
                     repeats.remove(at: index)
                 }else{
-                    dNum = 0
-                    let dNum = repeatNum["dNum"]! - dNum
+                    let dNum = repeatNum["dNum"]! - deleNum
+                    steps += deleNum
+                    deleNum = 0
                     repeats.remove(at: index)
                     repeats.append(self.configRepeatChar(num: dNum+2))
                     break
                 }
                 index += 1
             }
-            
-        }else{
-            
+            if deleNum>0 {
+                steps += deleNum
+            }
         }
-        return 0
+        var iNum = 0
+        for repeatNum in repeats {
+            iNum += repeatNum["iNum"]!
+        }
+        steps += iNum>mustNum ? iNum : mustNum
+        return steps
     }
     func configRepeatChar(num: Int) -> [String:Int]{
         let n = num/3
