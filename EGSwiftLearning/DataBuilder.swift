@@ -70,7 +70,7 @@ class DataBuilder: NSObject {
     static var WordLadder2Keys = ["beginWord", "endWord", "wordList"]
     class func WordLadder2Data() -> [[String:Any]]{
         return [
-//            [["hit","hot","dot","dog","cog"],["hit","hot","lot","log","cog"]]
+            //            [["hit","hot","dot","dog","cog"],["hit","hot","lot","log","cog"]]
             [
                 WordLadder2Keys[0]:"hit",
                 WordLadder2Keys[1]:"cog",
@@ -115,6 +115,31 @@ class DataBuilder: NSObject {
                 "arrLen":13    //output:51
             ],
         ]
+    }
+    
+    class func palindromePartitionData() ->[[String:Any]] {
+    return [
+        [
+        "s":"abc",
+        "k":2,      //1
+        ],
+        [
+        "s":"aabbc",
+        "k":3,      //0
+        ],
+        [
+        "s":"leetcode",
+        "k":8,      //0
+        ],
+        [
+        "s":"ihhyviwv",
+        "k":7,      //0
+        ],
+        [
+        "s":"oiwwhqjkb",
+        "k":1,      //0
+        ]
+    ]
     }
     
     class func StrongPasswordCheckerData() -> [String] {

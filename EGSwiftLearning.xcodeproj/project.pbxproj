@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB027F16239BF0730065ACC9 /* AlgorithmManager+PalindromePartitioning3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB027F15239BF0730065ACC9 /* AlgorithmManager+PalindromePartitioning3.swift */; };
 		EB11E27C23910AE800967914 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11E27B23910AE800967914 /* Map.swift */; };
 		EB2E64BC238D583700206990 /* AlgorithmManager+StayInSamePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E64BB238D583700206990 /* AlgorithmManager+StayInSamePlace.swift */; };
 		EB47C6A32372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB47C6A22372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB027F15239BF0730065ACC9 /* AlgorithmManager+PalindromePartitioning3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+PalindromePartitioning3.swift"; sourceTree = "<group>"; };
 		EB11E27B23910AE800967914 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		EB2E64BB238D583700206990 /* AlgorithmManager+StayInSamePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+StayInSamePlace.swift"; sourceTree = "<group>"; };
 		EB47C6A22372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+LongestDuplicateSubstring.swift"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				EBFC969A237978AB00FD8907 /* AlgorithmManager+TheClosestPalindrome.swift */,
 				EB6C9F652383D10500A590E7 /* AlgorithmManager+WordLadder2.swift */,
 				EB2E64BB238D583700206990 /* AlgorithmManager+StayInSamePlace.swift */,
+				EB027F15239BF0730065ACC9 /* AlgorithmManager+PalindromePartitioning3.swift */,
 				EB80BF60239E65A3003EEF9C /* AlgorithmManager+StrongPasswordChecker.swift */,
 				EBE9A2962357FD66004D9856 /* Main.storyboard */,
 				EBE9A2992357FD69004D9856 /* Assets.xcassets */,
@@ -304,6 +307,7 @@
 				EB80BF61239E65A3003EEF9C /* AlgorithmManager+StrongPasswordChecker.swift in Sources */,
 				EBC551BB236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift in Sources */,
 				EBFC969B237978AB00FD8907 /* AlgorithmManager+TheClosestPalindrome.swift in Sources */,
+				EB027F16239BF0730065ACC9 /* AlgorithmManager+PalindromePartitioning3.swift in Sources */,
 				EBE9A2C923581940004D9856 /* DataBuilder.swift in Sources */,
 				EBC18CA52361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift in Sources */,
 				EB47C6A32372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift in Sources */,

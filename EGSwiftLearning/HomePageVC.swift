@@ -41,6 +41,7 @@ class HomePageVC: UIViewController {
 //        result = self.checkLongestDuplicateSubstring()
 //        result = self.checkNearestPalindromic()
 //result = self.checkStayInSamePlace()
+        result = self.checkPalindromePartition()
 //        result = self.checkWordLadder2()
         result = self.checkStrongPasswordCheckerData()
         
@@ -140,6 +141,17 @@ class HomePageVC: UIViewController {
             result += "steps = " + String(data["steps"]!) + " arrLen = " + String(data["arrLen"]!) + "\n"
             result += "output : " + String(self.algo.numWays(data["steps"]!, data["arrLen"]!)) + "\n"
         }
+        return result
+    }
+    func checkPalindromePartition() -> String {
+        var result = "checkPalindromePartition is: \n"
+        let datas = DataBuilder.palindromePartitionData()
+        for data in datas {
+            
+            result += "s = " + (data["s"]as! String) + " k = " + String(data["k"] as! Int) + "\n"
+            result += "output : " + String(self.algo.palindromePartition(data["s"] as! String, data["k"] as! Int)) + "\n"
+        }
+        
         return result
     }
     func checkStrongPasswordCheckerData() -> String {
