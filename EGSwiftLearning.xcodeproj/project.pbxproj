@@ -14,6 +14,7 @@
 		EB6C9F662383D10500A590E7 /* AlgorithmManager+WordLadder2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C9F652383D10500A590E7 /* AlgorithmManager+WordLadder2.swift */; };
 		EB80BF61239E65A3003EEF9C /* AlgorithmManager+StrongPasswordChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80BF60239E65A3003EEF9C /* AlgorithmManager+StrongPasswordChecker.swift */; };
 		EB8FC80C235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FC80B235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift */; };
+		EBB4709123A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB4709023A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift */; };
 		EBC18CA52361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */; };
 		EBC551BB236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC551BA236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift */; };
 		EBE9A2912357FD66004D9856 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9A2902357FD66004D9856 /* AppDelegate.swift */; };
@@ -54,6 +55,7 @@
 		EB6C9F652383D10500A590E7 /* AlgorithmManager+WordLadder2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+WordLadder2.swift"; sourceTree = "<group>"; };
 		EB80BF60239E65A3003EEF9C /* AlgorithmManager+StrongPasswordChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+StrongPasswordChecker.swift"; sourceTree = "<group>"; };
 		EB8FC80B235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+ValidNumber.swift"; sourceTree = "<group>"; };
+		EBB4709023A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+WildcardMatching.swift"; sourceTree = "<group>"; };
 		EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+OnceInTripleArray.swift"; sourceTree = "<group>"; };
 		EBC551BA236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+MacPointsOnLine.swift"; sourceTree = "<group>"; };
 		EBE9A28D2357FD66004D9856 /* EGSwiftLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGSwiftLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +148,7 @@
 				EB2E64BB238D583700206990 /* AlgorithmManager+StayInSamePlace.swift */,
 				EB027F15239BF0730065ACC9 /* AlgorithmManager+PalindromePartitioning3.swift */,
 				EB80BF60239E65A3003EEF9C /* AlgorithmManager+StrongPasswordChecker.swift */,
+				EBB4709023A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift */,
 				EBE9A2962357FD66004D9856 /* Main.storyboard */,
 				EBE9A2992357FD69004D9856 /* Assets.xcassets */,
 				EBE9A29B2357FD69004D9856 /* LaunchScreen.storyboard */,
@@ -307,6 +310,7 @@
 				EB80BF61239E65A3003EEF9C /* AlgorithmManager+StrongPasswordChecker.swift in Sources */,
 				EBC551BB236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift in Sources */,
 				EBFC969B237978AB00FD8907 /* AlgorithmManager+TheClosestPalindrome.swift in Sources */,
+				EBB4709123A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift in Sources */,
 				EB027F16239BF0730065ACC9 /* AlgorithmManager+PalindromePartitioning3.swift in Sources */,
 				EBE9A2C923581940004D9856 /* DataBuilder.swift in Sources */,
 				EBC18CA52361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift in Sources */,

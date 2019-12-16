@@ -151,4 +151,14 @@ class DataBuilder: NSObject {
             "AAAAAABBBBBB123456789a", //4
         ]
     }
+    class func WildcardMatchingData() -> [[String]] {
+        return [
+        ["aa", "a"],
+        ["aa", "*"],
+        ["cb", "?a"],
+        ["adceb", "a*c?b"],
+        ["adceb", "a*c*b"],
+        ["adceb", "a*c*b*"],
+        ]
+    }
 }

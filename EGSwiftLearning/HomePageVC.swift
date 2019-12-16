@@ -41,9 +41,10 @@ class HomePageVC: UIViewController {
 //        result = self.checkLongestDuplicateSubstring()
 //        result = self.checkNearestPalindromic()
 //result = self.checkStayInSamePlace()
-        result = self.checkPalindromePartition()
+//        result = self.checkPalindromePartition()
 //        result = self.checkWordLadder2()
-        result = self.checkStrongPasswordCheckerData()
+//        result = self.checkStrongPasswordCheckerData()
+        result = self.checkWildcardMatching()
         
 //        let map = Map()
 //        map.testMap()
@@ -160,6 +161,15 @@ class HomePageVC: UIViewController {
         for data in datas {
             result += "str = " + data + "\n"
             result += "output : " + String(self.algo.strongPasswordChecker(data)) + "\n"
+        }
+        return result
+    }
+    func checkWildcardMatching() -> String {
+        var result = "checkWildcardMatching is: \n"
+        let datas = DataBuilder.WildcardMatchingData()
+        for data in datas {
+            result += "s = " + data[0] +  " p = " + data[1] + "\n"
+            result += "output : " + String(self.algo.wildcardMatchingChecker(data[0], p: data[1])) + "\n"
         }
         return result
     }
