@@ -118,34 +118,34 @@ class DataBuilder: NSObject {
     }
     
     class func palindromePartitionData() ->[[String:Any]] {
-    return [
-        [
-        "s":"abc",
-        "k":2,      //1
-        ],
-        [
-        "s":"aabbc",
-        "k":3,      //0
-        ],
-        [
-        "s":"leetcode",
-        "k":8,      //0
-        ],
-        [
-        "s":"ihhyviwv",
-        "k":7,      //0
-        ],
-        [
-        "s":"oiwwhqjkb",
-        "k":1,      //0
+        return [
+            [
+                "s":"abc",
+                "k":2,      //1
+            ],
+            [
+                "s":"aabbc",
+                "k":3,      //0
+            ],
+            [
+                "s":"leetcode",
+                "k":8,      //0
+            ],
+            [
+                "s":"ihhyviwv",
+                "k":7,      //0
+            ],
+            [
+                "s":"oiwwhqjkb",
+                "k":1,      //0
+            ]
         ]
-    ]
     }
     
     class func StrongPasswordCheckerData() -> [String] {
         return [
-        "abccccdddddeee", //3
-        "", //6
+            "abccccdddddeee", //3
+            "", //6
             "a", //5
             "aaaabbaaabbaaa123456A", //3
             "AAAAAABBBBBB123456789a", //4
@@ -153,12 +153,14 @@ class DataBuilder: NSObject {
     }
     class func WildcardMatchingData() -> [[String]] {
         return [
-        ["aa", "a"],
-        ["aa", "*"],
-        ["cb", "?a"],
-        ["adceb", "a*c?b"],
-        ["adceb", "a*c*b"],
-        ["adceb", "a*c*b*"],
+//            ["aa", "a"],
+//            ["aa", "*"],
+//            ["cb", "?a"],
+//            ["adceb", "a*c?b"],
+//            ["adceb", "a*c*b"],
+//            ["adceb", "a*c*b*"],
+//            ["acdcb", "a*c?b"],
+            ["mississippi", "m??*ss*?i*pi"],
         ]
     }
 }
