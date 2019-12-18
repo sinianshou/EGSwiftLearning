@@ -70,7 +70,7 @@ class DataBuilder: NSObject {
     static var WordLadder2Keys = ["beginWord", "endWord", "wordList"]
     class func WordLadder2Data() -> [[String:Any]]{
         return [
-//            [["hit","hot","dot","dog","cog"],["hit","hot","lot","log","cog"]]
+            //            [["hit","hot","dot","dog","cog"],["hit","hot","lot","log","cog"]]
             [
                 WordLadder2Keys[0]:"hit",
                 WordLadder2Keys[1]:"cog",
@@ -114,6 +114,53 @@ class DataBuilder: NSObject {
                 "steps":6,
                 "arrLen":13    //output:51
             ],
+        ]
+    }
+    
+    class func palindromePartitionData() ->[[String:Any]] {
+        return [
+            [
+                "s":"abc",
+                "k":2,      //1
+            ],
+            [
+                "s":"aabbc",
+                "k":3,      //0
+            ],
+            [
+                "s":"leetcode",
+                "k":8,      //0
+            ],
+            [
+                "s":"ihhyviwv",
+                "k":7,      //0
+            ],
+            [
+                "s":"oiwwhqjkb",
+                "k":1,      //0
+            ]
+        ]
+    }
+    
+    class func StrongPasswordCheckerData() -> [String] {
+        return [
+            "abccccdddddeee", //3
+            "", //6
+            "a", //5
+            "aaaabbaaabbaaa123456A", //3
+            "AAAAAABBBBBB123456789a", //4
+        ]
+    }
+    class func WildcardMatchingData() -> [[String]] {
+        return [
+//            ["aa", "a"],
+            ["aa", "*"],
+//            ["cb", "?a"],
+//            ["adceb", "a*c?b"],
+//            ["adceb", "a*c*b"],
+//            ["adceb", "a*c*b*"],
+//            ["acdcb", "a*c?b"],
+//            ["mississippi", "m??*ss*?i*pi"],
         ]
     }
 }

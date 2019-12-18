@@ -40,8 +40,18 @@ class HomePageVC: UIViewController {
 //        result = self.checkMaxPointOnLine()
 //        result = self.checkLongestDuplicateSubstring()
 //        result = self.checkNearestPalindromic()
-result = self.checkWordLadder2()
 //result = self.checkStayInSamePlace()
+//        result = self.checkPalindromePartition()
+//        result = self.checkWordLadder2()
+//        result = self.checkStrongPasswordCheckerData()
+result = self.checkWildcardMatching()
+        
+//        let map = Map()
+//        map.testMap()
+//        map.testCompactMap()
+//        map.testCompactMapValues()
+//        map.testFlatMap()
+        
         resultView.text = result
     }
     func checkWordLadder2() -> String{
@@ -131,6 +141,36 @@ result = self.checkWordLadder2()
         for data in datas {
             result += "steps = " + String(data["steps"]!) + " arrLen = " + String(data["arrLen"]!) + "\n"
             result += "output : " + String(self.algo.numWays(data["steps"]!, data["arrLen"]!)) + "\n"
+        }
+        return result
+    }
+    func checkPalindromePartition() -> String {
+        var result = "checkPalindromePartition is: \n"
+        let datas = DataBuilder.palindromePartitionData()
+        for data in datas {
+            
+            result += "s = " + (data["s"]as! String) + " k = " + String(data["k"] as! Int) + "\n"
+            result += "output : " + String(self.algo.palindromePartition(data["s"] as! String, data["k"] as! Int)) + "\n"
+        }
+        
+        return result
+    }
+    func checkStrongPasswordCheckerData() -> String {
+        var result = "checkStrongPasswordCheckerData is: \n"
+        let datas = DataBuilder.StrongPasswordCheckerData()
+        for data in datas {
+            result += "str = " + data + "\n"
+            result += "output : " + String(self.algo.strongPasswordChecker(data)) + "\n"
+        }
+        return result
+    }
+    func checkWildcardMatching() -> String {
+        var result = "checkWildcardMatching is: \n"
+        let datas = DataBuilder.WildcardMatchingData()
+        for data in datas {
+            result += "s = " + data[0] +  " p = " + data[1] + "\n"
+            result += "output : " + String(self.algo.wildcardMatchingChecker1(data[0], p: data[1])) + "\n"
+//            result += "output : " + String(self.algo.wildcardMatchingChecker(data[0], p: data[1])) + "\n"
         }
         return result
     }
