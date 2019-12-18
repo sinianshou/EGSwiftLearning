@@ -44,7 +44,7 @@ class HomePageVC: UIViewController {
 //        result = self.checkPalindromePartition()
 //        result = self.checkWordLadder2()
 //        result = self.checkStrongPasswordCheckerData()
-        result = self.checkWildcardMatching()
+result = self.checkWildcardMatching()
         
 //        let map = Map()
 //        map.testMap()
@@ -169,7 +169,8 @@ class HomePageVC: UIViewController {
         let datas = DataBuilder.WildcardMatchingData()
         for data in datas {
             result += "s = " + data[0] +  " p = " + data[1] + "\n"
-            result += "output : " + String(self.algo.wildcardMatchingChecker(data[0], p: data[1])) + "\n"
+            result += "output : " + String(self.algo.wildcardMatchingChecker1(data[0], p: data[1])) + "\n"
+//            result += "output : " + String(self.algo.wildcardMatchingChecker(data[0], p: data[1])) + "\n"
         }
         return result
     }
