@@ -153,14 +153,20 @@ class DataBuilder: NSObject {
     }
     class func WildcardMatchingData() -> [[String]] {
         return [
-//            ["aa", "a"],
+            ["aa", "a"],
             ["aa", "*"],
-//            ["cb", "?a"],
-//            ["adceb", "a*c?b"],
-//            ["adceb", "a*c*b"],
-//            ["adceb", "a*c*b*"],
-//            ["acdcb", "a*c?b"],
-//            ["mississippi", "m??*ss*?i*pi"],
+            ["cb", "?a"],
+            ["adceb", "a*c?b"],
+            ["adceb", "a*c*b"],
+            ["adceb", "a*c*b*"],
+            ["acdcb", "a*c?b"],
+            ["mississippi", "m??*ss*?i*pi"],
+        ]
+    }
+    class func reversePairsData() -> [[Int]]{
+        return [
+            [1,3,2,3,1],    //2
+//            [2,4,3,5,1],    //3
         ]
     }
 }
