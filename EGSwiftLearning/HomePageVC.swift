@@ -44,7 +44,8 @@ class HomePageVC: UIViewController {
 //        result = self.checkPalindromePartition()
 //        result = self.checkWordLadder2()
 //        result = self.checkStrongPasswordCheckerData()
-result = self.checkWildcardMatching()
+//result = self.checkWildcardMatching()
+result = self.checkreversePairs()
         
 //        let map = Map()
 //        map.testMap()
@@ -174,4 +175,17 @@ result = self.checkWildcardMatching()
         }
         return result
     }
+    
+
+        func checkreversePairs() -> String {
+            var result = "checkreversePairs is: \n"
+            let datas = DataBuilder.reversePairsData()
+            for data in datas {
+                
+                result += "[ " + data.map(String.init).joined(separator: ",") + "]\n"
+                result += "output : " + String(self.algo.reversePairs(data)) + "\n"
+    //            result += "output : " + String(self.algo.wildcardMatchingChecker(data[0], p: data[1])) + "\n"
+            }
+            return result
+        }
 }
