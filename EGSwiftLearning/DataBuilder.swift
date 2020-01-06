@@ -172,4 +172,24 @@ class DataBuilder: NSObject {
             [2,4,3,5,1],    //3
         ]
     }
+    class func shortestSubarrayData() -> [[String:Any]]{
+        return [
+            [
+                "A":[1],
+                "K":1,  //1
+            ],
+            [
+                "A":[1,2],
+                "K":4,  //-1
+            ],
+            [
+                "A":[2,-1,2],
+                "K":3,  //3
+            ],
+            [
+                "A":[2,-1,9],
+                "K":3,  //1
+            ],
+        ]
+    }
 }

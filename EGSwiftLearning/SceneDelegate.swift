@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        
+
         let vc = HomePageVC()
         let nc = UINavigationController(rootViewController: vc)
 
@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = nc
         window?.makeKeyAndVisible()
-        
+//
     }
 
     @available(iOS 13.0, *)

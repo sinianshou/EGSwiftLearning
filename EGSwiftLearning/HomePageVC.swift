@@ -21,7 +21,7 @@ class HomePageVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     func UIConfig(){
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.brown
         let bn = UIButton.init()
         bn.setTitle("测试", for: .normal)
         bn.frame = CGRect(x: 10, y: 100, width: 100, height: 50)
@@ -45,8 +45,8 @@ class HomePageVC: UIViewController {
 //        result = self.checkWordLadder2()
 //        result = self.checkStrongPasswordCheckerData()
 //result = self.checkWildcardMatching()
-result = self.checkreversePairs()
-        
+//result = self.checkreversePairs()
+        result = self.checkShortestSubarray()
 //        let map = Map()
 //        map.testMap()
 //        map.testCompactMap()
@@ -176,7 +176,7 @@ result = self.checkreversePairs()
         return result
     }
     
-
+    
         func checkreversePairs() -> String {
             var result = "checkreversePairs is: \n"
             let datas = DataBuilder.reversePairsData()
@@ -185,6 +185,20 @@ result = self.checkreversePairs()
                 result += "[ " + data.map(String.init).joined(separator: ",") + "]\n"
                 result += "output : " + String(self.algo.reversePairs(data)) + "\n"
     //            result += "output : " + String(self.algo.wildcardMatchingChecker(data[0], p: data[1])) + "\n"
+            }
+            return result
+        }
+    
+        func checkShortestSubarray() -> String {
+            var result = "checkShortestSubarray is: \n"
+            let datas = DataBuilder.shortestSubarrayData()
+            for data in datas {
+                result += "[ "
+                for d in data["A"] as! [Int]{
+                    result += String(d) + ", "
+                }
+                result += "], K is " + String(data["K"] as! Int) + " \n"
+                result += "output : " + String(self.algo.shortestSubarray(data["A"] as! [Int],data["K"] as! Int)) + "\n"
             }
             return result
         }
