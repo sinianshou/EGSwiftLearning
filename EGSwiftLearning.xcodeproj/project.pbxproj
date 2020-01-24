@@ -17,6 +17,7 @@
 		EB8E9CB923C2EA8000F3BBC5 /* AlgorithmManager+ShortestSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E9CB823C2EA8000F3BBC5 /* AlgorithmManager+ShortestSubarray.swift */; };
 		EB8FC80C235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FC80B235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift */; };
 		EBB4709123A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB4709023A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift */; };
+		EBBC7CBE23DAC30700D82377 /* AlgorithmManager+TextJustification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC7CBD23DAC30700D82377 /* AlgorithmManager+TextJustification.swift */; };
 		EBC18CA52361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */; };
 		EBC551BB236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC551BA236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift */; };
 		EBE9A2912357FD66004D9856 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9A2902357FD66004D9856 /* AppDelegate.swift */; };
@@ -60,6 +61,7 @@
 		EB8E9CB823C2EA8000F3BBC5 /* AlgorithmManager+ShortestSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+ShortestSubarray.swift"; sourceTree = "<group>"; };
 		EB8FC80B235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+ValidNumber.swift"; sourceTree = "<group>"; };
 		EBB4709023A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+WildcardMatching.swift"; sourceTree = "<group>"; };
+		EBBC7CBD23DAC30700D82377 /* AlgorithmManager+TextJustification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+TextJustification.swift"; sourceTree = "<group>"; };
 		EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+OnceInTripleArray.swift"; sourceTree = "<group>"; };
 		EBC551BA236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+MacPointsOnLine.swift"; sourceTree = "<group>"; };
 		EBE9A28D2357FD66004D9856 /* EGSwiftLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGSwiftLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +155,7 @@
 				EB027F15239BF0730065ACC9 /* AlgorithmManager+PalindromePartitioning3.swift */,
 				EB80BF60239E65A3003EEF9C /* AlgorithmManager+StrongPasswordChecker.swift */,
 				EBB4709023A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift */,
+				EBBC7CBD23DAC30700D82377 /* AlgorithmManager+TextJustification.swift */,
 				EB8192DA23B1B2D7002F689D /* AlgorithmManager+ReversePairs.swift */,
 				EB8E9CB823C2EA8000F3BBC5 /* AlgorithmManager+ShortestSubarray.swift */,
 				EBE9A2962357FD66004D9856 /* Main.storyboard */,
@@ -330,6 +333,7 @@
 				EBE9A2CB235819EF004D9856 /* AlgorithmManager.swift in Sources */,
 				EB11E27C23910AE800967914 /* Map.swift in Sources */,
 				EBE9A2932357FD66004D9856 /* SceneDelegate.swift in Sources */,
+				EBBC7CBE23DAC30700D82377 /* AlgorithmManager+TextJustification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
