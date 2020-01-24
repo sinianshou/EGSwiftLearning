@@ -163,4 +163,20 @@ class DataBuilder: NSObject {
 //            ["mississippi", "m??*ss*?i*pi"],
         ]
     }
+    class func TextJustificationData() -> [[String:Any]]{
+        return [
+            [
+                "words" : ["This", "is", "an", "example", "of", "text", "justification."],
+                "maxWidth" : 16,
+            ],
+            [
+                "words" : ["What","must","be","acknowledgment","shall","be"],
+                "maxWidth" : 16,
+            ],
+            [
+                "words" : ["ask","not","what","your","country","can","do","for","you","ask","what","you","can","do","for","your","country"],
+                "maxWidth" : 16,
+            ]
+        ]
+    }
 }

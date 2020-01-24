@@ -44,7 +44,8 @@ class HomePageVC: UIViewController {
 //        result = self.checkPalindromePartition()
 //        result = self.checkWordLadder2()
 //        result = self.checkStrongPasswordCheckerData()
-result = self.checkWildcardMatching()
+//        result = self.checkWildcardMatching()
+        result = self.checkTextJustification()
         
 //        let map = Map()
 //        map.testMap()
@@ -171,6 +172,26 @@ result = self.checkWildcardMatching()
             result += "s = " + data[0] +  " p = " + data[1] + "\n"
             result += "output : " + String(self.algo.wildcardMatchingChecker1(data[0], p: data[1])) + "\n"
 //            result += "output : " + String(self.algo.wildcardMatchingChecker(data[0], p: data[1])) + "\n"
+        }
+        return result
+    }
+    func checkTextJustification() -> String {
+        var result = "checkTextJustification is: \n"
+        let datas = DataBuilder.TextJustificationData()
+        for data in datas {
+            result += "[ "
+            let words = data["words"] as! [String];
+            let maxWid = data["maxWidth"] as! Int
+            for word in words {
+                result += word + ", "
+            }
+            result += "], \nmaxWidth = " + String(maxWid) +  "\n"
+            result += "output : \n["
+            let res = self.algo.fullJustify(words, maxWid)
+            for re in res {
+                result += re + "\n"
+            }
+            result += "]\n"
         }
         return result
     }
