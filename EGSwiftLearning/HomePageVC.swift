@@ -45,10 +45,12 @@ class HomePageVC: UIViewController {
 //        result = self.checkWordLadder2()
 //        result = self.checkStrongPasswordCheckerData()
 //        result = self.checkWildcardMatching()
-        result = self.checkTextJustification()
+//        result = self.checkTextJustification()
 //result = self.checkWildcardMatching()
 //result = self.checkreversePairs()
-        result = self.checkShortestSubarray()
+//        result = self.checkShortestSubarray()
+        result = self.checkNumberToWordsData()
+        
 //        let map = Map()
 //        map.testMap()
 //        map.testCompactMap()
@@ -224,4 +226,14 @@ class HomePageVC: UIViewController {
             }
             return result
         }
+    
+    func checkNumberToWordsData() -> String {
+        var result = "checkNumberToWordsData is: \n"
+        let datas = DataBuilder.NumberToWordsData()
+        for num in datas {
+            result += "num is : " + String(num) + "\n"
+            result += "output : " + self.algo.numberToWords(num) + "\n"
+        }
+        return result
+    }
 }

@@ -208,4 +208,14 @@ class DataBuilder: NSObject {
             ]
         ]
     }
+    class func NumberToWordsData() -> [Int]{
+        return[
+            20, //utput: "Twenty"
+            123, //Output: "One Hundred Twenty Three"
+            12345,//Output: "Twelve Thousand Three Hundred Forty Five"
+            1234567,//Output: "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
+            1234567891,//Output: "One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Thousand Eight Hundred Ninety One"
+        ]
+        
+    }
 }
