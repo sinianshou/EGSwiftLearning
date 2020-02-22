@@ -218,4 +218,20 @@ class DataBuilder: NSObject {
         ]
         
     }
+    class func SplitArraySameAverageData() -> [[Int]]{
+        return[
+            [1,4,3,6,7,5,2,8],
+            [1,1,2,3,4,5,6,7,8],
+        ]
+    }
+    
+    class func DecodeWays2Data() -> [String]{
+        return[
+//            "*",
+//            "1*",
+            "1111",
+//            "1*1",
+            "61616",
+        ]
+    }
 }

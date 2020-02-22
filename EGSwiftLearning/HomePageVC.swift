@@ -40,16 +40,18 @@ class HomePageVC: UIViewController {
 //        result = self.checkMaxPointOnLine()
 //        result = self.checkLongestDuplicateSubstring()
 //        result = self.checkNearestPalindromic()
-//result = self.checkStayInSamePlace()
+//        result = self.checkStayInSamePlace()
 //        result = self.checkPalindromePartition()
 //        result = self.checkWordLadder2()
 //        result = self.checkStrongPasswordCheckerData()
 //        result = self.checkWildcardMatching()
 //        result = self.checkTextJustification()
-//result = self.checkWildcardMatching()
-//result = self.checkreversePairs()
+//        result = self.checkWildcardMatching()
+//        result = self.checkreversePairs()
 //        result = self.checkShortestSubarray()
-        result = self.checkNumberToWordsData()
+//        result = self.checkNumberToWordsData()
+//        result = self.checkSplitArraySameAverageData()
+        result = self.checkDecodeWays2Data()
         
 //        let map = Map()
 //        map.testMap()
@@ -58,6 +60,16 @@ class HomePageVC: UIViewController {
 //        map.testFlatMap()
         
         resultView.text = result
+        
+//        var rp = Bundle.main.path(forResource: "123", ofType: "txt")
+////        rp = Bundle.main.path(forResource: "DataBuilder", ofType: "swift")
+//        do {
+//            let con = try String(contentsOfFile: rp!, encoding: .utf8)
+//            print("con is ",con)
+//        } catch let err {
+//            print("error:\(err)")//捕捉到错误，处理错误
+//        }
+        
     }
     func checkWordLadder2() -> String{
         var result = "checkWordLadder2 result is :"
@@ -233,6 +245,28 @@ class HomePageVC: UIViewController {
         for num in datas {
             result += "num is : " + String(num) + "\n"
             result += "output : " + self.algo.numberToWords(num) + "\n"
+        }
+        return result
+    }
+    func checkSplitArraySameAverageData() -> String {
+        var result = "checkSplitArraySameAverageData is: \n"
+        let datas = DataBuilder.SplitArraySameAverageData()
+        for nums in datas {
+            result += "arr is : [ "
+            for d in nums {
+                result += String(d) + ", "
+            }
+            result += "]  \n"
+            result += "output : " + String(self.algo.splitArraySameAverage(nums)) + "\n"
+        }
+        return result
+    }
+    func checkDecodeWays2Data() -> String {
+        var result = "checkDecodeWays2Data is: \n"
+        let datas = DataBuilder.DecodeWays2Data()
+        for str in datas {
+            result += "str is :  " + str +  "  \n"
+            result += "output : " + String(self.algo.numDecodings(str)) + "\n"
         }
         return result
     }
