@@ -20,6 +20,7 @@
 		EB8FC80C235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FC80B235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift */; };
 		EB90DD1623EB10D400011604 /* AlgorithmManager+IntegerToWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB90DD1523EB10D400011604 /* AlgorithmManager+IntegerToWords.swift */; };
 		EB93847A23FCF8D60038C5FC /* AlgorithmManager+DecodeWays2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93847923FCF8D60038C5FC /* AlgorithmManager+DecodeWays2.swift */; };
+		EB9413C4240523A100795A28 /* AlgorithmManager+SuperEggDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9413C3240523A100795A28 /* AlgorithmManager+SuperEggDrop.swift */; };
 		EBB4709123A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB4709023A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift */; };
 		EBBC7CBE23DAC30700D82377 /* AlgorithmManager+TextJustification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC7CBD23DAC30700D82377 /* AlgorithmManager+TextJustification.swift */; };
 		EBC18CA52361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */; };
@@ -68,6 +69,7 @@
 		EB8FC80B235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+ValidNumber.swift"; sourceTree = "<group>"; };
 		EB90DD1523EB10D400011604 /* AlgorithmManager+IntegerToWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+IntegerToWords.swift"; sourceTree = "<group>"; };
 		EB93847923FCF8D60038C5FC /* AlgorithmManager+DecodeWays2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+DecodeWays2.swift"; sourceTree = "<group>"; };
+		EB9413C3240523A100795A28 /* AlgorithmManager+SuperEggDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+SuperEggDrop.swift"; sourceTree = "<group>"; };
 		EBB4709023A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+WildcardMatching.swift"; sourceTree = "<group>"; };
 		EBBC7CBD23DAC30700D82377 /* AlgorithmManager+TextJustification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+TextJustification.swift"; sourceTree = "<group>"; };
 		EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+OnceInTripleArray.swift"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				EB90DD1523EB10D400011604 /* AlgorithmManager+IntegerToWords.swift */,
 				EB82262823F576FD00328726 /* AlgorithmManager+SplitArraySameAverage.swift */,
 				EB93847923FCF8D60038C5FC /* AlgorithmManager+DecodeWays2.swift */,
+				EB9413C3240523A100795A28 /* AlgorithmManager+SuperEggDrop.swift */,
 				EBE9A2962357FD66004D9856 /* Main.storyboard */,
 				EBE9A2992357FD69004D9856 /* Assets.xcassets */,
 				EBE9A29B2357FD69004D9856 /* LaunchScreen.storyboard */,
@@ -336,6 +339,7 @@
 				EBFC969B237978AB00FD8907 /* AlgorithmManager+TheClosestPalindrome.swift in Sources */,
 				EBB4709123A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift in Sources */,
 				EB027F16239BF0730065ACC9 /* AlgorithmManager+PalindromePartitioning3.swift in Sources */,
+				EB9413C4240523A100795A28 /* AlgorithmManager+SuperEggDrop.swift in Sources */,
 				EBE9A2C923581940004D9856 /* DataBuilder.swift in Sources */,
 				EBC18CA52361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift in Sources */,
 				EB47C6A32372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift in Sources */,

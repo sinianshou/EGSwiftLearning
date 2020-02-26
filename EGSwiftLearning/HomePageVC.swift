@@ -51,7 +51,9 @@ class HomePageVC: UIViewController {
 //        result = self.checkShortestSubarray()
 //        result = self.checkNumberToWordsData()
 //        result = self.checkSplitArraySameAverageData()
-        result = self.checkDecodeWays2Data()
+//        result = self.checkDecodeWays2Data()
+        result = self.checkSuperEggDropData()
+        
         
 //        let map = Map()
 //        map.testMap()
@@ -267,6 +269,20 @@ class HomePageVC: UIViewController {
         for str in datas {
             result += "str is :  " + str +  "  \n"
             result += "output : " + String(self.algo.numDecodings(str)) + "\n"
+        }
+        return result
+    }
+    
+    func checkSuperEggDropData() -> String {
+        var result = "checkSuperEggDropData is: \n"
+        let datas = DataBuilder.SuperEggDropData()
+        for nums in datas {
+            result += "arr is : [ "
+            for d in nums {
+                result += String(d) + ", "
+            }
+            result += "]  \n"
+            result += "output : " + String(self.algo.superEggDrop(nums[0], nums[1])) + "\n"
         }
         return result
     }

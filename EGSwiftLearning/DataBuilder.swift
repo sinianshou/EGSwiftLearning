@@ -227,11 +227,18 @@ class DataBuilder: NSObject {
     
     class func DecodeWays2Data() -> [String]{
         return[
-//            "*",
-//            "1*",
+            //            "*",
+            //            "1*",
             "1111",
-//            "1*1",
+            //            "1*1",
             "61616",
+        ]
+    }
+    class func SuperEggDropData() -> [[Int]]{
+        return[
+            [1,2],  //output 2
+            [2,6],  //output 3
+            [3,14],  //output 4
         ]
     }
 }
