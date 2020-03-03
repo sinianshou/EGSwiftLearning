@@ -52,8 +52,8 @@ class HomePageVC: UIViewController {
 //        result = self.checkNumberToWordsData()
 //        result = self.checkSplitArraySameAverageData()
 //        result = self.checkDecodeWays2Data()
-        result = self.checkSuperEggDropData()
-        
+//        result = self.checkSuperEggDropData()
+        result = self.checkRegularExpressionMatchingData()
         
 //        let map = Map()
 //        map.testMap()
@@ -283,6 +283,19 @@ class HomePageVC: UIViewController {
             }
             result += "]  \n"
             result += "output : " + String(self.algo.superEggDrop(nums[0], nums[1])) + "\n"
+        }
+        return result
+    }
+    func checkRegularExpressionMatchingData() -> String {
+        var result = "checkSuperEggDropData is: \n"
+        let datas = DataBuilder.RegularExpressionMatchingData()
+        for strs in datas {
+            result += "arr is : [ "
+            for str in strs {
+                result += str + ", "
+            }
+            result += "]  \n"
+            result += "output : " + String(self.algo.isMatch(strs[0], strs[1])) + "\n"
         }
         return result
     }

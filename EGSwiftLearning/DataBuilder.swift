@@ -241,4 +241,15 @@ class DataBuilder: NSObject {
             [3,14],  //output 4
         ]
     }
+    class func RegularExpressionMatchingData() -> [[String]]{
+        return[
+        ["a",""],     //false
+        ["","*"],     //false
+        ["aa","a"],     //false
+            ["aa","a*"],     //true
+            ["ab",".*"],     //true
+            ["aab","c*a*b"],     //true
+            ["mississippi","mis*is*p*."],     //false
+        ]
+    }
 }
