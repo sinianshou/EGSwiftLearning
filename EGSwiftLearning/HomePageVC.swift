@@ -53,7 +53,8 @@ class HomePageVC: UIViewController {
 //        result = self.checkSplitArraySameAverageData()
 //        result = self.checkDecodeWays2Data()
 //        result = self.checkSuperEggDropData()
-        result = self.checkRegularExpressionMatchingData()
+//        result = self.checkRegularExpressionMatchingData()
+        result = self.checkMaxNumberData()
         
 //        let map = Map()
 //        map.testMap()
@@ -296,6 +297,28 @@ class HomePageVC: UIViewController {
             }
             result += "]  \n"
             result += "output : " + String(self.algo.isMatch(strs[0], strs[1])) + "\n"
+        }
+        return result
+    }
+    
+    func checkMaxNumberData() -> String {
+        var result = "checkMaxNumberData is: \n"
+        let datas = DataBuilder.MaxNumberData()
+        for numArrs in datas {
+            for numArr in numArrs {
+                result += "[ "
+                for num in numArr {
+                    result += String(num) + ", "
+                }
+                result += "]  \n"
+            }
+            result += "output : "
+            let resArr = self.algo.maxNumber(numArrs[0], numArrs[1], numArrs[2].first!)
+            result += "[ "
+            for res in resArr {
+                result += String(res) + ", "
+            }
+            result += "]  \n"
         }
         return result
     }

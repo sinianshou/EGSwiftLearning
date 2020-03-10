@@ -243,13 +243,42 @@ class DataBuilder: NSObject {
     }
     class func RegularExpressionMatchingData() -> [[String]]{
         return[
-        ["a",""],     //false
-        ["","*"],     //false
-        ["aa","a"],     //false
+            ["a",""],     //false
+            ["","*"],     //false
+            ["aa","a"],     //false
             ["aa","a*"],     //true
             ["ab",".*"],     //true
             ["aab","c*a*b"],     //true
             ["mississippi","mis*is*p*."],     //false
+        ]
+    }
+    class func MaxNumberData()->[[[Int]]]{
+        return [
+//            [
+//                [3, 4, 6, 5],
+//                [9, 1, 2, 5, 8, 3],
+//                [5],
+//            ],  //9 8 6 5 3
+//            [
+//                [3, 4, 6, 5],
+//                [8, 1, 2, 5, 9, 3],
+//                [5],
+//            ],  //9 4 6 5 3
+//            [
+//                [6, 7],
+//                [6, 0, 4],
+//                [5],
+//            ],  //6 7 6 0 4
+//            [
+//                [3, 9,],
+//                [8, 9],
+//                [3],
+//            ],  // 9 8 9
+            [
+                [6,7,5],
+                [4,8,1],
+                [3],
+            ],     // 8 7 5
         ]
     }
 }
