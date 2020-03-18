@@ -11,6 +11,7 @@
 		EB11E27C23910AE800967914 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11E27B23910AE800967914 /* Map.swift */; };
 		EB2E64BC238D583700206990 /* AlgorithmManager+StayInSamePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E64BB238D583700206990 /* AlgorithmManager+StayInSamePlace.swift */; };
 		EB47C6A32372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB47C6A22372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift */; };
+		EB48BDCA2420EBCD00DF9A8D /* AlgorithmManager+LongestValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB48BDC92420EBCD00DF9A8D /* AlgorithmManager+LongestValidParentheses.swift */; };
 		EB6C9F662383D10500A590E7 /* AlgorithmManager+WordLadder2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C9F652383D10500A590E7 /* AlgorithmManager+WordLadder2.swift */; };
 		EB80BF61239E65A3003EEF9C /* AlgorithmManager+StrongPasswordChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80BF60239E65A3003EEF9C /* AlgorithmManager+StrongPasswordChecker.swift */; };
 		EB8192DB23B1B2D7002F689D /* AlgorithmManager+ReversePairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8192DA23B1B2D7002F689D /* AlgorithmManager+ReversePairs.swift */; };
@@ -62,6 +63,7 @@
 		EB11E27B23910AE800967914 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		EB2E64BB238D583700206990 /* AlgorithmManager+StayInSamePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+StayInSamePlace.swift"; sourceTree = "<group>"; };
 		EB47C6A22372EB10006A1AF1 /* AlgorithmManager+LongestDuplicateSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+LongestDuplicateSubstring.swift"; sourceTree = "<group>"; };
+		EB48BDC92420EBCD00DF9A8D /* AlgorithmManager+LongestValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+LongestValidParentheses.swift"; sourceTree = "<group>"; };
 		EB6C9F652383D10500A590E7 /* AlgorithmManager+WordLadder2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+WordLadder2.swift"; sourceTree = "<group>"; };
 		EB80BF60239E65A3003EEF9C /* AlgorithmManager+StrongPasswordChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+StrongPasswordChecker.swift"; sourceTree = "<group>"; };
 		EB8192DA23B1B2D7002F689D /* AlgorithmManager+ReversePairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+ReversePairs.swift"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				EB93847923FCF8D60038C5FC /* AlgorithmManager+DecodeWays2.swift */,
 				EB9413C3240523A100795A28 /* AlgorithmManager+SuperEggDrop.swift */,
 				EBF5A50024173F67005B8042 /* AlgorithmManager+CreateMaximumNumber.swift */,
+				EB48BDC92420EBCD00DF9A8D /* AlgorithmManager+LongestValidParentheses.swift */,
 				EBE9A2962357FD66004D9856 /* Main.storyboard */,
 				EBE9A2992357FD69004D9856 /* Assets.xcassets */,
 				EBE9A29B2357FD69004D9856 /* LaunchScreen.storyboard */,
@@ -361,6 +364,7 @@
 				EB11E27C23910AE800967914 /* Map.swift in Sources */,
 				EBE9A2932357FD66004D9856 /* SceneDelegate.swift in Sources */,
 				EB82262923F576FD00328726 /* AlgorithmManager+SplitArraySameAverage.swift in Sources */,
+				EB48BDCA2420EBCD00DF9A8D /* AlgorithmManager+LongestValidParentheses.swift in Sources */,
 				EBBC7CBE23DAC30700D82377 /* AlgorithmManager+TextJustification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

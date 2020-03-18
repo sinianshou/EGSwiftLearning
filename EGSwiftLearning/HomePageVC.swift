@@ -54,7 +54,9 @@ class HomePageVC: UIViewController {
 //        result = self.checkDecodeWays2Data()
 //        result = self.checkSuperEggDropData()
 //        result = self.checkRegularExpressionMatchingData()
-        result = self.checkMaxNumberData()
+//        result = self.checkMaxNumberData()
+        result = self.checkLongestValidParentheses()
+        
         
 //        let map = Map()
 //        map.testMap()
@@ -319,6 +321,16 @@ class HomePageVC: UIViewController {
                 result += String(res) + ", "
             }
             result += "]  \n"
+        }
+        return result
+    }
+    
+    func checkLongestValidParentheses() -> String {
+        var result = "checkLongestValidParentheses is: \n"
+        let datas = DataBuilder.LongestValidParenthesesData()
+        for str in datas {
+            result += "str is " + str + " \n"
+            result += "output : " + String(self.algo.longestValidParentheses(str)) + "\n"
         }
         return result
     }
