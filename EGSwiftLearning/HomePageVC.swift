@@ -55,8 +55,8 @@ class HomePageVC: UIViewController {
 //        result = self.checkSuperEggDropData()
 //        result = self.checkRegularExpressionMatchingData()
 //        result = self.checkMaxNumberData()
-        result = self.checkLongestValidParentheses()
-        
+//        result = self.checkLongestValidParentheses()
+        result = self.checkMaxProfits()
         
 //        let map = Map()
 //        map.testMap()
@@ -331,6 +331,21 @@ class HomePageVC: UIViewController {
         for str in datas {
             result += "str is " + str + " \n"
             result += "output : " + String(self.algo.longestValidParentheses(str)) + "\n"
+        }
+        return result
+    }
+    
+    func checkMaxProfits() -> String {
+        var result = "checkMaxProfits is: \n"
+        let datas = DataBuilder.MaxProfitData()
+        for (priceArr,k) in datas {
+            result += "["
+            for price in priceArr {
+                result += String(price) + ", "
+            }
+            result += "]  \n"
+            result += "k is " + String(k) + " \n"
+            result += "output : " + String(self.algo.maxProfit(k,priceArr)) + "\n"
         }
         return result
     }

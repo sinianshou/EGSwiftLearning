@@ -24,6 +24,7 @@
 		EB9413C4240523A100795A28 /* AlgorithmManager+SuperEggDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9413C3240523A100795A28 /* AlgorithmManager+SuperEggDrop.swift */; };
 		EBB4709123A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB4709023A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift */; };
 		EBBC7CBE23DAC30700D82377 /* AlgorithmManager+TextJustification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC7CBD23DAC30700D82377 /* AlgorithmManager+TextJustification.swift */; };
+		EBBEB4742428CC7F0042D80A /* AlgorithmManager+MaxProfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBEB4732428CC7F0042D80A /* AlgorithmManager+MaxProfit.swift */; };
 		EBC18CA52361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */; };
 		EBC551BB236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC551BA236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift */; };
 		EBD766F3240DED7700F5857F /* AlogrithmManager+RegularExpressionMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD766F2240DED7700F5857F /* AlogrithmManager+RegularExpressionMatching.swift */; };
@@ -76,6 +77,7 @@
 		EB9413C3240523A100795A28 /* AlgorithmManager+SuperEggDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+SuperEggDrop.swift"; sourceTree = "<group>"; };
 		EBB4709023A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+WildcardMatching.swift"; sourceTree = "<group>"; };
 		EBBC7CBD23DAC30700D82377 /* AlgorithmManager+TextJustification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+TextJustification.swift"; sourceTree = "<group>"; };
+		EBBEB4732428CC7F0042D80A /* AlgorithmManager+MaxProfit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+MaxProfit.swift"; sourceTree = "<group>"; };
 		EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+OnceInTripleArray.swift"; sourceTree = "<group>"; };
 		EBC551BA236A8E2D00237E46 /* AlgorithmManager+MacPointsOnLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+MacPointsOnLine.swift"; sourceTree = "<group>"; };
 		EBD766F2240DED7700F5857F /* AlogrithmManager+RegularExpressionMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlogrithmManager+RegularExpressionMatching.swift"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				EB9413C3240523A100795A28 /* AlgorithmManager+SuperEggDrop.swift */,
 				EBF5A50024173F67005B8042 /* AlgorithmManager+CreateMaximumNumber.swift */,
 				EB48BDC92420EBCD00DF9A8D /* AlgorithmManager+LongestValidParentheses.swift */,
+				EBBEB4732428CC7F0042D80A /* AlgorithmManager+MaxProfit.swift */,
 				EBE9A2962357FD66004D9856 /* Main.storyboard */,
 				EBE9A2992357FD69004D9856 /* Assets.xcassets */,
 				EBE9A29B2357FD69004D9856 /* LaunchScreen.storyboard */,
@@ -365,6 +368,7 @@
 				EBE9A2932357FD66004D9856 /* SceneDelegate.swift in Sources */,
 				EB82262923F576FD00328726 /* AlgorithmManager+SplitArraySameAverage.swift in Sources */,
 				EB48BDCA2420EBCD00DF9A8D /* AlgorithmManager+LongestValidParentheses.swift in Sources */,
+				EBBEB4742428CC7F0042D80A /* AlgorithmManager+MaxProfit.swift in Sources */,
 				EBBC7CBE23DAC30700D82377 /* AlgorithmManager+TextJustification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
