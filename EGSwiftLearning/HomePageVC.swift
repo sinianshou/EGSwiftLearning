@@ -56,7 +56,9 @@ class HomePageVC: UIViewController {
 //        result = self.checkRegularExpressionMatchingData()
 //        result = self.checkMaxNumberData()
 //        result = self.checkLongestValidParentheses()
-        result = self.checkMaxProfits()
+//        result = self.checkMaxProfits()
+        result = self.checkSelfCrossingData()
+        
         
 //        let map = Map()
 //        map.testMap()
@@ -346,6 +348,20 @@ class HomePageVC: UIViewController {
             result += "]  \n"
             result += "k is " + String(k) + " \n"
             result += "output : " + String(self.algo.maxProfit(k,priceArr)) + "\n"
+        }
+        return result
+    }
+    
+    func checkSelfCrossingData() -> String {
+        var result = "checkSelfCrossingData is: \n"
+        let datas = DataBuilder.SelfCrossingData()
+        for points in datas {
+            result += "["
+            for point in points {
+                result += String(point) + ", "
+            }
+            result += "]  \n"
+            result += "output : " + String(self.algo.isSelfCrossing(points)) + "\n"
         }
         return result
     }

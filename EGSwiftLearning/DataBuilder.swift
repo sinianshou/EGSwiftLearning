@@ -300,4 +300,12 @@ class DataBuilder: NSObject {
         ([1,2],1),    //output 1
         ]
     }
+    
+    class func SelfCrossingData()->[[Int]]{
+        return[
+            [2,1,1,2], //output true
+            [1,2,3,4], //output false
+            [1,1,1,1], //output true
+        ]
+    }
 }
