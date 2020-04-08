@@ -308,4 +308,13 @@ class DataBuilder: NSObject {
             [1,1,1,1], //output true
         ]
     }
+    
+    class func NthMagicalNumberData()->[[Int]]{
+        return[
+            [1,2,3], //output 2
+            [4,2,3], //output 6
+            [5,2,4], //output 10
+            [3,6,4], //output 8
+        ]
+    }
 }

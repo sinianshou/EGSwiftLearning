@@ -24,6 +24,7 @@
 		EB93847A23FCF8D60038C5FC /* AlgorithmManager+DecodeWays2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93847923FCF8D60038C5FC /* AlgorithmManager+DecodeWays2.swift */; };
 		EB9413C4240523A100795A28 /* AlgorithmManager+SuperEggDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9413C3240523A100795A28 /* AlgorithmManager+SuperEggDrop.swift */; };
 		EBB4709123A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB4709023A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift */; };
+		EBBA9B14243CAE3B00887A33 /* AlgorithmManager+NthMagicalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBA9B13243CAE3B00887A33 /* AlgorithmManager+NthMagicalNumber.swift */; };
 		EBBC7CBE23DAC30700D82377 /* AlgorithmManager+TextJustification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC7CBD23DAC30700D82377 /* AlgorithmManager+TextJustification.swift */; };
 		EBBEB4742428CC7F0042D80A /* AlgorithmManager+MaxProfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBEB4732428CC7F0042D80A /* AlgorithmManager+MaxProfit.swift */; };
 		EBC18CA52361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */; };
@@ -78,6 +79,7 @@
 		EB93847923FCF8D60038C5FC /* AlgorithmManager+DecodeWays2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+DecodeWays2.swift"; sourceTree = "<group>"; };
 		EB9413C3240523A100795A28 /* AlgorithmManager+SuperEggDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+SuperEggDrop.swift"; sourceTree = "<group>"; };
 		EBB4709023A7AF0600E6B049 /* AlgorithmManager+WildcardMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+WildcardMatching.swift"; sourceTree = "<group>"; };
+		EBBA9B13243CAE3B00887A33 /* AlgorithmManager+NthMagicalNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+NthMagicalNumber.swift"; sourceTree = "<group>"; };
 		EBBC7CBD23DAC30700D82377 /* AlgorithmManager+TextJustification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+TextJustification.swift"; sourceTree = "<group>"; };
 		EBBEB4732428CC7F0042D80A /* AlgorithmManager+MaxProfit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+MaxProfit.swift"; sourceTree = "<group>"; };
 		EBC18CA42361D50100530AE9 /* AlgorithmManager+OnceInTripleArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlgorithmManager+OnceInTripleArray.swift"; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				EB48BDC92420EBCD00DF9A8D /* AlgorithmManager+LongestValidParentheses.swift */,
 				EBBEB4732428CC7F0042D80A /* AlgorithmManager+MaxProfit.swift */,
 				EB7AA76D243188C50058E893 /* AlgorithmManager+SelfCrossing.swift */,
+				EBBA9B13243CAE3B00887A33 /* AlgorithmManager+NthMagicalNumber.swift */,
 				EBE9A2962357FD66004D9856 /* Main.storyboard */,
 				EBE9A2992357FD69004D9856 /* Assets.xcassets */,
 				EBE9A29B2357FD69004D9856 /* LaunchScreen.storyboard */,
@@ -366,6 +369,7 @@
 				EB8FC80C235ECF50007FE3EA /* AlgorithmManager+ValidNumber.swift in Sources */,
 				EB90DD1623EB10D400011604 /* AlgorithmManager+IntegerToWords.swift in Sources */,
 				EB2E64BC238D583700206990 /* AlgorithmManager+StayInSamePlace.swift in Sources */,
+				EBBA9B14243CAE3B00887A33 /* AlgorithmManager+NthMagicalNumber.swift in Sources */,
 				EB8192DB23B1B2D7002F689D /* AlgorithmManager+ReversePairs.swift in Sources */,
 				EBE9A2CB235819EF004D9856 /* AlgorithmManager.swift in Sources */,
 				EB11E27C23910AE800967914 /* Map.swift in Sources */,

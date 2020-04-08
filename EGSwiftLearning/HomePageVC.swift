@@ -57,8 +57,8 @@ class HomePageVC: UIViewController {
 //        result = self.checkMaxNumberData()
 //        result = self.checkLongestValidParentheses()
 //        result = self.checkMaxProfits()
-        result = self.checkSelfCrossingData()
-        
+//        result = self.checkSelfCrossingData()
+        result = self.CheckNthMagicalNumberData()
         
 //        let map = Map()
 //        map.testMap()
@@ -76,6 +76,7 @@ class HomePageVC: UIViewController {
 //        } catch let err {
 //            print("error:\(err)")//捕捉到错误，处理错误
 //        }
+        
         
     }
     func checkWordLadder2() -> String{
@@ -362,6 +363,20 @@ class HomePageVC: UIViewController {
             }
             result += "]  \n"
             result += "output : " + String(self.algo.isSelfCrossing(points)) + "\n"
+        }
+        return result
+    }
+    
+    func CheckNthMagicalNumberData() -> String {
+        var result = "NthMagicalNumberData is: \n"
+        let datas = DataBuilder.NthMagicalNumberData()
+        for nums in datas {
+            result += "["
+            for num in nums {
+                result += String(num) + ", "
+            }
+            result += "]  \n"
+            result += "output : " + String(self.algo.nthMagicalNumber(nums[0], nums[1], nums[2])) + "\n"
         }
         return result
     }
