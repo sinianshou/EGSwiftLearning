@@ -9,16 +9,46 @@
 import UIKit
 
 @available(iOS 10.0, *)
-@available(iOS 10.0, *)
 class HomePageVC: UIViewController {
     
+    var thread = Thread()
     var resultView = UITextView()
     var algo = AlgorithmManager()
+    var flag = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.UIConfig()
         // Do any additional setup after loading the view.
+        self.test1()
+    }
+    func test1() -> Int {
+        let str = "abcdnmcqwe"
+                let strArr = Array(str)
+                var startIdx = 0
+                var res = 0
+                var set = Set<Character>()
+                var i = 0
+                while(startIdx < strArr.count){
+                    let beforeCount = set.count
+                    let currentChar = strArr[i]
+                    set.insert(currentChar)
+                    let afterCount = set.count
+                    if beforeCount == afterCount {
+                        set.removeAll()
+                        res = max(res, i-1)
+                        for j in startIdx ..< strArr.count {
+                            if currentChar == strArr[j] {
+                                startIdx = j + 1
+                                i = startIdx
+                                break
+                            }
+                        }
+                    }
+                    i += 1
+                }
+        res = max(res, strArr.count - startIdx)
+                return res
     }
     func UIConfig(){
         self.view.backgroundColor = UIColor.brown
@@ -33,6 +63,38 @@ class HomePageVC: UIViewController {
         self.view.addSubview(resultView)
     }
     @objc func test(){
+        
+        var group = DispatchGroup()
+        var queue = DispatchQueue.global()
+        group.enter()
+        queue.async {
+            sleep(5)
+            print("1")
+            group.leave()
+        }
+        group.enter()
+        queue.async {
+            sleep(3)
+            print("2")
+            group.leave()
+        }
+        group.enter()
+        queue.async {
+            sleep(1)
+            print("3")
+            group.leave()
+        }
+        let work = DispatchWorkItem {
+            print("notify")
+        }
+        group.notify(queue: queue, work: work)
+        
+        queue.async {
+            print("4")
+            group.wait()
+            print("5")
+        }
+        
         var result = ""
 //        result = self.checkCryptopangrams()
 //        result = self.checkValidNum()
@@ -76,7 +138,6 @@ class HomePageVC: UIViewController {
 //        } catch let err {
 //            print("error:\(err)")//捕捉到错误，处理错误
 //        }
-        
         
     }
     func checkWordLadder2() -> String{

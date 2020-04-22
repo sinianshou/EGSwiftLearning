@@ -310,6 +310,9 @@ class DataBuilder: NSObject {
     }
     
     class func NthMagicalNumberData()->[[Int]]{
+        var asd = [Character:Int]()
+        asd["a"]=1
+        max(1, 1)
         return[
             [1,2,3], //output 2
             [4,2,3], //output 6
